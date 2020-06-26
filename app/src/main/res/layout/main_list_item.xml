@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="net.softandroid.domain.main.entity.GetCatsItem" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/mainListItem"
+            loadImage="@{item.url}"
+            tools:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_height="300dp" />
+
+        <ImageView
+            android:id="@+id/mainListFav"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/mainListItem"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseline_favorite_border_24" />
+
+        <ImageView
+            android:id="@+id/mainListDownload"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/mainListItem"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseline_arrow_downward_24" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SimpleCats</string>
+    <string name="common_network_error">Network Error</string>
+    <string name="common_text_no_result_error">No results found</string>
+    <string name="main_show_more">Show More</string>
+    <string name="main_favourites">Favourites</string>
+    <string name="save_success">Saved successfully</string>
+    <string name="error_save_favourites">Error add to favourites</string>
+    <string name="favourites_title">Favourites</string>
+    <string name="common_download_title">Downloading image: %1$s</string>
+</resources>

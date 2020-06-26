@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="net.softandroid.domain.favourites.entity.FavsCatsItem" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/favsListItem"
+            loadImage="@{item.url}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:background="@color/colorPrimaryDark"
+            tools:layout_height="300dp" />
+
+
+        <ImageView
+            android:id="@+id/favsListDownload"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/favsListItem"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseline_arrow_downward_24" />
+    </RelativeLayout>
+</layout>
